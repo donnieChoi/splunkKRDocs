@@ -48,7 +48,9 @@ limits.conf
 
 Data Model/Report Acceleration의 제어
 -------------
+
 limits.conf
+    
     [scheduler]
     auto_summary_perc = 50
     
