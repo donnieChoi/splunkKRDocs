@@ -155,25 +155,23 @@ sestatus
 ```
 > /etc/selinux/config, set “SELINUX=disabled”
 
-**기타: non root 유저로 스플렁크 설치시 고려사항**
 
 
-------------
-
-http://docs.splunk.com/Documentation/Splunk/latest/Installation/RunSplunkasadifferentornon-rootuser
+</hr>
 
 
 **UDP Input 에 관련된 시스템 튜닝**
 
 ------------
 
-UDP를 통해 다량의 보안 장비 syslog데이터를 수집하는 경우,UDP 특성상 패킷 drop이 많이 발생할 수 있다. UDP라서 완전히 손실을 없애기는 힘들지만 다음과 같은 방법으로 손실을 거의 없앨 수 있다.</br>
+UDP를 통해 다량의 보안 장비 syslog데이터를 수집하는 경우,UDP 특성상 패킷 drop이 많이 발생할 수 있다. </br>UDP라서 완전히 손실을 없애기는 힘들지만 다음과 같은 방법으로 손실을 거의 없앨 수 있다.</br>
 
-UDP 패킷 손실이 생기는 주된?이유.
+UDP 패킷 손실이 생기는 주된 이유.
 1.	OS Kernel 레벨에서 충분치 않은 버퍼 크기
-일반 Linux배포본를 설치하면, Kernel parameter에 대한 기본 값이 충분치 크지 않기 때문에, 반드시 수정해서 늘려줘야 한다.?
+일반 Linux배포본를 설치하면 Kernel parameter에 대한 기본 값이 충분치 크지 않기 때문에, 반드시 수정해서 늘려줘야 한다.
 2.	UDP를 수신하는 어플리케이션(Heavy Forwarder등)이 충분히 빠르게 처리하지 못하는 경우
-OS버퍼에서 해당 메세지가 넘쳐서 밀려나가기 전에 어플리케이션에서 받아가야 하는데, 빠르게 동작하지 못하는 경우에는 놓칠 수 있다.</br> 기본적으로 어플리케이션 프로세스의?성능 튜닝이 필요하겠지만, Splunk에서는?buffer 크기 조정 및 persistentQueue를 enable시켜서 문제를 완화할 수 있다.?
+OS버퍼에서 해당 메세지가 넘쳐서 밀려나가기 전에 어플리케이션에서 받아가야 하는데, 빠르게 동작하지 못하는 경우에는 놓칠 수 있다.
+</br> 기본적으로 어플리케이션 프로세스의 성능 튜닝이 필요하겠지만, Splunk에서는 buffer 크기 조정 및 persistentQueue를 enable시켜서 문제를 완화할 수 있다.
 
 
 **OS 레벨에서 drop되는 UDP 패킷의 양 모니터링 방법**
@@ -188,7 +186,7 @@ IcmpMsg:
  OutType3: 9372
 Udp:
  57 packets received
- 9372 packets to unknown port received. 
+ 9372 packets to unknown port received.
  0 packet receive errors  <-- drop된 패킷 수
  9427 packets sent
 ...
@@ -216,7 +214,7 @@ sysctl -w net.core.netdev_max_backlog=2000
 
 
 **Splunk에서 buffer크기 및 persistent queue 설정**
-?UDP input을 정의한 해당 inputs.conf 파일에 아래와같이 설정
+UDP input을 정의한 해당 inputs.conf 파일에 아래와같이 설정
 ```
  [udp://10541]
 …
@@ -236,3 +234,11 @@ UF  index 로 output.conf에 forceTimeBasedAutoLB = true 를 추가해 줄것. </br>?
 http://wiki.splunk.com/Community:UDPInputs
 https://answers.splunk.com/answers/7001/udp-drops-on-linux.html
 http://docs.splunk.com/Documentation/Splunk/6.2.2/Data/SyslogTCP
+
+
+**기타: non root 유저로 스플렁크 설치시 고려사항**
+
+
+------------
+
+http://docs.splunk.com/Documentation/Splunk/latest/Installation/RunSplunkasadifferentornon-rootuser
