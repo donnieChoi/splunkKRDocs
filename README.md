@@ -1,30 +1,22 @@
-Splunk ì‚¬ìš©ì ê°€ì´ë“œ ëª¨ìŒ
+Splunk »ç¿ëÀÚ °¡ÀÌµå
 =============
 
-Splunk
--------------
+<hr />
+
+½ºÇÃ··Å© °ü·Ã ÀÚ·á ¹× ¸µÅ©¸¦ ¸ğ¾Æ³õ´Â °÷ÀÔ´Ï´Ù. </br>
+°ø½ÄÀûÀÎ °¡ÀÌµå°¡ ¾Æ´Ï¸ç, ¿À·ù¸¦ Æ÷ÇÔÇÒ ¼ö ÀÖÀ¸¹Ç·Î ÃÖ½ÅÀÇ ÀÚ·á´Â http://docs.splunk.com À» ÂüÁ¶ÇÏ½Ã±â ¹Ù¶ø´Ï´Ù.</br>
+
+![Alt text](https://www.dropbox.com/s/mvws9i4iluzlcim/dukhu.jpg?raw=1 "title")
 
 
-#### <i class="icon-file"></i> Splunk Architecture
-ì´ê²Œ ì´ìƒí•˜ê¸´ í•˜ë‹¤.
+### ½ºÇÃ··Å© °ø½Ä »çÀÌÆ®
 
-**ì‹ ê¸°**í•˜ê¸´ í•œë° ì´ìƒí•˜ë„¤.
+- website:    http://splunk.com
 
-> ì´ë ‡ê²Œ ë„£ìœ¼ë©´ ë˜ë„¤.
-
----
-
-
-1. ì´ê²Œ
-2. íˆíˆ
-
-***
-
-* ì´ìƒ
-
-
-+ í•˜ë„¤
-
-`this is code`
-
-    this is code block
+- °ø½ÄµµÅ¥¸ÕÆ®:    http://docs.splunk.com
+- ÇÑ±ÛµµÅ¥¸ÕÆ®: http://docs.splunk.com/Documentation/Splunk/latest/Translated/Koreanmanuals
+- °³¹ßÀÚµµÅ¥¸ÕÆ®: http://dev.splunk.com
+- answers:    http://answers.splunk.com
+- splunkbase: splunkbase.splunk.com
+- .conf: http://conf.splunk.com
+- wiki: http://wiki.splunk.com
