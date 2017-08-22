@@ -1,14 +1,14 @@
 
 
 
-Splunk Search configuration 
+Splunk Search configuration
 ===========================
 
 
 ## Search 의 종류 ##
 
- - adhoc 
- - scheduled 
+ - adhoc
+ - scheduled
  - data model acceleration 
  - report acceleration
 
@@ -50,8 +50,8 @@ Data Model/Report Acceleration의 제어
 -------------
 
 limits.conf
-    
+
     [scheduler]
     auto_summary_perc = 50
-    
+
 >**max_auto_summary = auto_summary_perc * max_searches**    
