@@ -22,4 +22,11 @@ sh3 | |
 
 
 요러쿠룸 구성해볼 예정이다.
+
 mgmt : LM + CM + DS + , DMC
+idx1, idx2, idx3 : Indexer Cluster
+sh1, sh2, sh3 : Search Head Cluster
+
+mon: fwd1
+
+그림 넣기 
