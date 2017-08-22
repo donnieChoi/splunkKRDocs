@@ -11,12 +11,14 @@ Splunk 사용자 가이드
 
 ### 스플렁크 공식 사이트
 
+![Alt text](https://www.dropbox.com/s/9rwpvtklmml8me9/logo-splunk.png?raw=1 "splunk")
+
 - website:    http://splunk.com
 
 - 공식도큐먼트:    http://docs.splunk.com
 - 한글도큐먼트: http://docs.splunk.com/Documentation/Splunk/latest/Translated/Koreanmanuals
 - 개발자도큐먼트: http://dev.splunk.com
 - answers:    http://answers.splunk.com
-- splunkbase: splunkbase.splunk.com
+- splunkbase: http://splunkbase.splunk.com
 - .conf: http://conf.splunk.com
 - wiki: http://wiki.splunk.com
