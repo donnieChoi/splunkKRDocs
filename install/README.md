@@ -29,4 +29,4 @@ sh3 | ec2-13-124-174-195.ap-northeast-2.compute.amazonaws.com | 13.124.174.195
 - sh1, sh2, sh3 : Search Head Cluster
 - mon: fwd1
 
-그림 넣기
+![Alt text](https://www.dropbox.com/s/2kt53bl89k4jetk/Screenshot%202017-08-24%2016.46.41.png?raw=1)
