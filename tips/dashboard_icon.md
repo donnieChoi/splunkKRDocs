@@ -1,3 +1,29 @@
+# Splunk Look&Feel Customization
+<hr />
+
+### Login화면의 splunk 이미지 변경
+
+1. $SPLUNK_HOME/etc/apps/search/appserver/static/ 하기에 logincustomlogo 디렉토리 생성 후 변경할 image를 넣어놓는다.
+
+2. $SPLUNK_HOME/etc/system/local/web.conf 에 해당 이미지 경로 넣기
+<br />
+
+```
+[root@localhost local]# cat web.conf
+[settings]
+loginCustomLogo = logincustomlogo/<image>.png
+```
+
+3. restart
+
+
+### Login 화면의 배경화경 변경
+<hr/>
+
+
+
+
+
 ### dashboard menu 우측 app이름을 icon으로 변경하는 방법
 <hr />
 
@@ -35,5 +61,3 @@ https://answers.splunk.com/answers/350493/how-do-i-automatically-build-out-prope
 
  ### 320 x 80
  sips -Z 80 $DOWNLOADS$ICON --out $SPLUNK_APPS$APP/static/appLogo_2x.png</br>
-
- 
