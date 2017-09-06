@@ -21,3 +21,28 @@
 
 
 ![Alt text](https://www.dropbox.com/s/04henvbukmqpiec/Screenshot%202017-09-06%2015.45.48.png?raw=1)
+
+
+쪼금 더 나가서.. default 값을 오늘 날자로 박고 싶을때(정적인 값이 아닌 매일 그날의 날자)는 위의 쿼리를 sort하고 selectFirstChoice tag를 써서 해결할 수 있다.
+
+```
+<input type="dropdown" token="date01">
+     <label>검색일</label>
+     <fieldForLabel>workday</fieldForLabel>
+     <fieldForValue>workday</fieldForValue>
+     <selectFirstChoice>true</selectFirstChoice>
+     <search>
+       <query>| makeresults
+| eval e=relative_time(now(),"-30d@d")
+| eval l=relative_time(now(),"+1d@d")
+| eval workday=mvrange(e,l,"1d")
+| eval workday=strftime(workday,"%Y/%m/%d")
+| mvexpand workday
+| sort - workday
+| table workday</query>
+       <earliest>-1d@d</earliest>
+       <latest>@d</latest>
+     </search>
+
+   </input>
+```
