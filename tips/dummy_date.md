@@ -46,3 +46,8 @@
 
    </input>
 ```
+
+
+이렇게 만든 2017/09/03 같은 값은 그냥 문쟈열일뿐 실제 시간값으로 쓰기 위해서는 하기와 같이 convert 함수를 써서 epoch time 포맷으로 바꾸면 된다.
+
+> | convert timeformat="%Y/%m/%d" mktime(Date01) as D
