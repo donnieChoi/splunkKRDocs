@@ -1,4 +1,5 @@
 # Splunk Look&Feel Customization
+
 <hr />
 
 ### Login화면의 splunk> 이미지 변경
@@ -16,9 +17,9 @@ loginCustomLogo = logincustomlogo/<image>.png
 
 3. restart
 
-
-### Login 화면의 배경화경 변경
 <hr/>
+### Login 화면의 배경화경 변경
+
 
 admin 으로 로그인 후, 설정 --> 서버 설정 --> 로그인 배경
 
@@ -27,10 +28,11 @@ admin 으로 로그인 후, 설정 --> 서버 설정 --> 로그인 배경
 1024x768이상의 해상도를 가진 이미지를 권고한다.
 
 
-### App 의 icon변경
 <hr />
+### App 의 icon변경
 
-dashboard menu 의 우측 app 이름,app menu을 아이콘으로 변경하는 방법. 
+
+dashboard menu 의 우측 app 이름,app menu을 아이콘으로 변경하는 방법.
 
 
 - 하기와 같이 $SPLUNK_HOME/etc/apps/<해당app>/static 디렉토리에 변경할 image 파일을 알맞게 resize 하여 넣은 후
