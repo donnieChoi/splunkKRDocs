@@ -18,6 +18,7 @@ loginCustomLogo = logincustomlogo/<image>.png
 3. restart
 
 <hr/>
+
 ### Login 화면의 배경화경 변경
 
 
@@ -29,6 +30,7 @@ admin 으로 로그인 후, 설정 --> 서버 설정 --> 로그인 배경
 
 
 <hr />
+
 ### App 의 icon변경
 
 
